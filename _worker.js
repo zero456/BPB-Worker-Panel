@@ -7,7 +7,7 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // https://www.uuidgenerator.net/
-let userID = '19ea44aa-7f18-455c-85aa-45059065a6d7';
+let userID = '4d0ff725-0559-4685-a94e-6ac57ead4c68';
 
 // https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/
 const proxyIPs= ['bpb.yousef.isegaro.com'];
@@ -15,10 +15,10 @@ const defaultHttpPorts = ['80', '8080', '2052', '2082', '2086', '2095', '8880'];
 const defaultHttpsPorts = ['443', '8443', '2053', '2083', '2087', '2096'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 let dohURL = 'https://cloudflare-dns.com/dns-query';
-let trojanPassword = `Zn-8263-1888`;
+let trojanPassword = `pass`;
 // https://emn178.github.io/online-tools/sha224.html
 // https://www.atatus.com/tools/sha224-to-hash
-let hashPassword = '5d5b344045ca2f0dd1431f65b47451f6271e9cc5dd5895f81e7e614c';
+let hashPassword = 'ccc9c73a37651c6b35de64c3a37858ccae045d285f57fffb409d251d';
 let panelVersion = '2.6.4';
 
 if (!isValidUUID(userID)) throw new Error(`Invalid UUID: ${userID}`);
